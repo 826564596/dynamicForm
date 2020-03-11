@@ -1,0 +1,11 @@
+{
+    "pages": ["pages/forms/forms", "pages/index/index"],
+    "window": {
+        "enableWK": "YES",
+        "enableDSL": true,
+        "defaultTitle": "研究院钉钉",
+        "backgroundColor": "#f7f7f7",
+        "pullRefresh": false,
+        "allowsBounceVertical": false
+    }
+}

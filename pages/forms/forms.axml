@@ -1,0 +1,19 @@
+<!--pages/forms/forms.wxml-->
+<view a:for="{{sort}}" a:for-item="m" a:if="{{m.show}} " class="sort">
+    <view onTap="showOrClose" data-index="{{index}}">
+        <text class="sort-name" a:if="{{m.show}}"> {{m.SORT_NAME}}</text>
+        <text class="sort-open">隐藏</text>
+    </view>
+    <view class="{{sortItems[index].class}}">
+        <view class="menu">
+            <view a:for="{{menu}}" a:if="{{item.SORT_ID == m.Sort_ID}}" class="grid-item-new" data-index="{{index}}">
+                <view onTap="detail" data-formId="{{item.formId}}">
+                    <view class="grid-item-wrapper-new">
+                        <view class="approval-box-img" style="backgroundPosition:{{item.Position}}"></view>
+                        <text class="grid-text-new">{{item.FlowName.indexOf('申请') > 0 && item.FlowName.length > 6  ? item.FlowName.replace('申请',""):item.FlowName}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="page">
+  <form onSubmit = 'submit'>
+    <view a:for="{{formConfigs}}" a:for-index="idx" a:for-item="fieldItem" a:key="{{fieldItem.fieldId}}">
+      <block a:for="{{fieldItem.formInfo}}" a:for-index="idx" a:for-item="items" a:key="{{items.id}}">
+        <block a:if="{{items.type==='text'}}">
+          <my-input onInput="input" formInfo="{{items}}"></my-input>
+        </block>
+      </block>
+    </view>
+    <button size="default" form-type="submit" type="primary">Button</button>
+  </form>
+  <button size="default" onTap="getInputValue" type="primary">Button</button>
+</view>

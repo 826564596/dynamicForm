@@ -1,0 +1,54 @@
+/* 存放组件一些通用的样式 */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 34rpx;
+    font-family: "微软雅黑";
+}
+.my-input {
+    background-color: #fff;
+    height: 100rpx;
+    margin-top: 32rpx;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row-content {
+    flex: 1;
+    text-align: right;
+    margin-right: 25rpx;
+}
+.isFill {
+    width: 34rpx;
+    height: 34rpx;
+    padding-top: 8rpx;
+}
+.star {
+    color: red;
+    height: 34rpx;
+}
+
+.input-text {
+    font-size: 34rpx;
+    color: #a4a5a9;
+    font-family: "微软雅黑";
+}
+.tip {
+    background-color: rgb(249, 235, 229);
+    height: 34rpx;
+    font-size: 21.3rpx !important;
+    color: rgb(239, 114, 115);
+}
+.tip-left {
+    width: 34rpx;
+    height: 34rpx;
+}

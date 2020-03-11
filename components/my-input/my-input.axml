@@ -1,0 +1,17 @@
+<view class="my-input flex">
+  <view class="flex">
+    <view class="isFill center">
+      <view class="star" a:if="{{formInfo.isFill}}">*
+      </view>
+    </view>
+  {{formInfo.label}}
+  </view>
+  <view class="form-row-content">
+    <input name="{{formInfo.name}}" class="input" placeholder="{{formInfo.placeholder}}" onInput="input" onConfirm="inputConfirm" placeholder-class="input-text" disabled="{{!formInfo.disable}}" />
+  </view>
+</view>
+<view class="tip flex" a:if="{{formInfo.isShow}}">
+  <view class="tip-left">
+  </view> 
+  {{formInfo.label}}不能为空
+</view>
